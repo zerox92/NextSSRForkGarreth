@@ -1,6 +1,8 @@
 import '../styles/globals.css'
 import Amplify from 'aws-amplify';
 import config from '../src/aws-exports';
+const bcrypt = require('bcrypt');
+
 Amplify.configure({
   ...config, ssr: true
 });
